@@ -25,6 +25,7 @@ build:
     post_install:
       - npm install docs/riscv-isa/riscv-isa-manual/dependencies
       - gem install -g docs/riscv-isa/riscv-isa-manual/dependencies/Gemfile
+      - gem install -g docs/design/design-manual/dependencies/Gemfile
     pre_build:
       - make -C docs prepare
 
