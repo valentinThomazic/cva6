@@ -27,6 +27,7 @@ build:
       - gem install -g docs/riscv-isa/riscv-isa-manual/dependencies/Gemfile
       - gem install -g docs/design/design-manual/dependencies/Gemfile
     pre_build:
+      - export PATH=$(npm get prefix -g):$PATH
       - make -C docs prepare
 
 # Build from the docs directory with Sphinx
